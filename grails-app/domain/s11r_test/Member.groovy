@@ -5,12 +5,12 @@ import java.time.LocalDate
 class Member {
 
 	static belongsTo = [grouping: Grouping, person: Person]
-	LocalDate start, end
+	LocalDate startDate, endDate
 
     static constraints = {
 		grouping nullable: false
 		person nullable: false
-		start nullable: false
-		end nullable: false
+		startDate nullable: false
+		endDate nullable: false
     }
 }
